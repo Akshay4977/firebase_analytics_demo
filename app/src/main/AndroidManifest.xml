@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
+<manifest xmlns:tools="http://schemas.android.com/tools"
     package="com.example.newanalyticspractice"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -23,9 +23,10 @@
         </activity>
         <activity
             android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
-            android:noHistory="true">
+            android:noHistory="true"
+            tools:ignore="MissingClass">
             <intent-filter>
-                <data android:scheme="tagmanager.c.com.example.app" />
+                <data android:scheme="com.example.newanalyticspractice" />
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE"/>
